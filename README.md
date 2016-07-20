@@ -9,7 +9,7 @@ This project will have included files:
 - Red[1-9].png
 - RedB.png
 - RedF.png
-- - BLUE.png
+- BLUE.png
 - RED.png
 ****I forgot the spy, will have to add it***
 
