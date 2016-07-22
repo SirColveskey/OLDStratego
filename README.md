@@ -27,6 +27,7 @@ This project will have included files:
     - int Attack(Piece) -- returns -1 for dies, 1 for kills, 0 for draw
 - Board
   - Attributes:
+    - string Winner = "" -- changed upon a victor
     - Piece[10][10] Squares
     - string Turn -- Red or Blue
     - int[10] RedPieces -- 0 == bomb, 1-9, Stores the number of each piece still in the game
