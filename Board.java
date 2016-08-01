@@ -140,7 +140,7 @@ class GamePanel extends JPanel {
 		int[] CollumnWs = {400,0,400,0,0,400,0,400,0,0,400};
 		Box[] Logs = new Box[10];
 		try {
-			bgImage = ImageIO.read(new File("src/imgs/Board.png"));
+			bgImage = ImageIO.read(new File("imgs/Board.png"));
 		} catch (IOException ex) {
 			System.out.println("Error with file loading.");
 		}
