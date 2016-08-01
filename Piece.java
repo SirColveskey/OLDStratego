@@ -29,16 +29,16 @@ public class Piece {
 		{
 			Color = "Red";
 			try {
-				piece = ImageIO.read(new File("src/imgs/RED.png"));
+				piece = ImageIO.read(new File("imgs/RED.png"));
 			} catch (IOException ex) {
 				System.out.println("Error with file loading.");
-				System.out.println("src/imgs/RED.png");}
+				System.out.println("imgs/RED.png");}
 		}
 		else if(firstChar.equals("B"))
 		{
 			Color = "Blue";
 			try {
-				piece = ImageIO.read(new File("src/imgs/BLUE.png"));
+				piece = ImageIO.read(new File("imgs/BLUE.png"));
 			} catch (IOException ex) {
 				System.out.println("Error with file loading.");}
 		}
@@ -59,10 +59,10 @@ public class Piece {
 			Rank = Integer.parseInt(lastChar);
 		}
 		try {
-			insignia = ImageIO.read(new File("src/imgs/"+Color+lastChar+".png"));
+			insignia = ImageIO.read(new File("imgs/"+Color+lastChar+".png"));
 		} catch (IOException ex) {
 			System.out.println("Error with file loading.");
-			System.out.println("src/imgs/"+Color+lastChar+".png");}
+			System.out.println("imgs/"+Color+lastChar+".png");}
 	}
 	
 	public int Attack(Piece other)
