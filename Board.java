@@ -1,4 +1,8 @@
 import java.awt.Graphics;
+
+import java.util.Arrays;
+import java.util.ArrayList;
+
 import java.awt.image.BufferedImage;
 import java.awt.Dimension;
 import javax.imageio.ImageIO;
@@ -50,8 +54,21 @@ public class Board {
 	
 	public void SetupMatch()
 	{
+		String[] pieces = {
+	            "B","B","B","B","B","B", /*Bombs*/
+	            "1","2","3","3",         /*Marshal, General, Colonels*/
+	            "4","4","4",             /*Majors*/
+	            "5","5","5","5",         /*Captians*/
+	            "6","6","6","6",         /*Lieutenants*/
+	            "7","7","7","7",         /*Sergant*/
+	            "8","8","8","8","8",     /*Miner*/
+	            "9","9","9","9","9","9","9","9", /*Scouts*/
+	            "S", "F"};               /*Spy, Flag*/
 		
-	}
+		ArrayList<Piece> p1Pieces = new ArrayList<Piece>();
+		ArrayList<Piece> p2Pieces = new ArrayList<Piece>();
+		
+	} 
 	
 	public void Flip()
 	{
