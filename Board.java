@@ -77,7 +77,7 @@ public class Board {
 		for (Piece p : p1Pieces)
 		{ //test that lists populated correctly. Prints in console properly
 			System.out.print(p.Rank);
-			Squares[1][1] = p;
+			Squares[1][1] = p; //doesn't work either
 		}
 		for (int i=0; i<10; ++i)
 		{ //place pieces in order in starting positions. Doesn't work???
