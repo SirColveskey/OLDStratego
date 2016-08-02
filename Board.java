@@ -48,6 +48,7 @@ public class Board {
 		}
 		Squares[0][0] = new Piece("R1");
 		Squares[3][4] = new Piece("B7");
+		Squares[3][6] = new Piece("R7");
 		Muster();
 		Flip();
 	}
@@ -67,6 +68,26 @@ public class Board {
 		
 		ArrayList<Piece> p1Pieces = new ArrayList<Piece>();
 		ArrayList<Piece> p2Pieces = new ArrayList<Piece>();
+		
+		for (String p : pieces)
+		{ //Populate lists of pieces
+		 	p1Pieces.add(new Piece("R" + p));
+		 	p2Pieces.add(new Piece("B" + p));
+		}
+		for (Piece p : p1Pieces)
+		{ //test that lists populated correctly. Prints in console properly
+			System.out.print(p.Rank);
+			Squares[1][1] = p;
+		}
+		for (int i=0; i<10; ++i)
+		{ //place pieces in order in starting positions. Doesn't work???
+			for (int j=0; j<4; ++j)
+			{
+				Squares[i][j] = p1Pieces.get(0);
+				p1Pieces.remove(0);
+			}
+			
+		}
 		
 	} 
 	

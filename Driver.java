@@ -5,9 +5,10 @@ public class Driver {
 	public static void main(String[] args)
 	{
 		Board board = new Board();
-		/*board.Flip();
+		board.Flip();
 		board.SetupMatch();
-		board.CheckGameover();
+		board.Flip();
+		/*board.CheckGameover();
 		while(true)
 		{
 			board.GetMove();
